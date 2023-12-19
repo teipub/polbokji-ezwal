@@ -1,0 +1,12 @@
+{
+  "name": "polbokjk-ezwel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.ts"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
