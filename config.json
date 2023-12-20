@@ -1,8 +1,9 @@
 {
   "id": "jjuson",
   "password": "ja15909090!",
-  "date": "20240108",
-  "preferred": [10049, 10308, 10051],
+  "date": "20240110",
+  "preferredRooms": [10048, 10049, 10308, 10051],
   "excludes" : ["10678", "11223"],
-  "roomName": "4인"
+  "roomName": "4인",
+  "waitMilliseconds": 1000
 }
