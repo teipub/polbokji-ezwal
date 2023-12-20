@@ -1,0 +1,20 @@
+{
+  "url": "https://polbokji.ezwel.com/",
+  "reservation": "https://polbokji.ezwel.com/cuser/checkin/reservation/checkinTrainingCenterBookable.ez?condoType=1005&menuCd=10038312",
+  "condos": [
+    {"id": 10045, "name": "대천수련원"},
+    {"id": 10046, "name": "변산수련원"},
+    {"id": 10047, "name": "진도수련원"},
+    {"id": 10048, "name": "통영수련원"},
+    {"id": 10049, "name": "제주해양경찰수련원"},
+    {"id": 10051, "name": "영덕수련원"},
+    {"id": 10052, "name": "제주한라수련원"},
+    {"id": 10083, "name": "강화수련원"},
+    {"id": 10308, "name": "동해해양경찰수련원"},
+    {"id": 10678, "name": "강화 카라반 캠핑장"},
+    {"id": 10699, "name": "서해해양경찰수련원"},
+    {"id": 11223, "name": "강릉 카라반 캠핑장"},
+    {"id": 11336, "name": "제천수련원"},
+    {"id": 11578, "name": "남해해양경찰수련원"}
+  ]
+}

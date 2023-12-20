@@ -1,6 +1,7 @@
 import {remote} from 'webdriverio'
 import fs from 'fs'
 
+const site = JSON.parse(fs.readFileSync('./site.json', 'utf8'));
 const config = JSON.parse(fs.readFileSync('./config.json', 'utf8'));
 
 (async () => {
@@ -13,7 +14,7 @@ const config = JSON.parse(fs.readFileSync('./config.json', 'utf8'));
     })
 
     // 로그인
-    await browser.url(config.url)
+    await browser.url(site.url)
     await browser.$('#loginSearchBean_userId').waitForExist()
     await browser.$('#loginSearchBean_userId').setValue(config.id)
     await browser.$('#loginSearchBean_password1').setValue(config.password)
@@ -21,8 +22,7 @@ const config = JSON.parse(fs.readFileSync('./config.json', 'utf8'));
     await waitForTitle(browser, 'cuser/main.ez')
 
     // 예약 페이지로 이동
-    await browser.url(config.reservation)
-
+    await browser.url(site.reservation)
 
     // 해당 달로 이동
     await browser.execute(`goCal('${config.date.substring(0, 6)}01');`)
