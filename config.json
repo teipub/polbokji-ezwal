@@ -1,0 +1,9 @@
+{
+  "url": "https://polbokji.ezwel.com/",
+  "reservation": "https://polbokji.ezwel.com/cuser/checkin/reservation/checkinTrainingCenterBookable.ez?condoType=1005&menuCd=10038312",
+  "id": "jjuson",
+  "password": "ja15909090!",
+  "date": "20240130",
+  "excludes" : ["10678", "11223"],
+  "roomName": "4인"
+}
