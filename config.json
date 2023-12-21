@@ -2,7 +2,7 @@
   "id": "jjuson",
   "password": "ja15909090!",
   "date": "20240117",
-  "preferredRooms": [11336, 10047, 10049, 10308, 10051],
+  "preferredAccommodations": [11336, 10047, 10049, 10308, 10051],
   "excludes" : ["10678", "11223"],
   "roomName": "4인",
   "waitMilliseconds": 3000
