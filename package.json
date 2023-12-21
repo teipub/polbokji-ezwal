@@ -12,9 +12,11 @@
   },
   "dependencies": {
     "@wdio/cli": "^8.26.3",
-    "@wdio/local-runner": "^8.26.3"
+    "@wdio/local-runner": "^8.26.3",
+    "webdriverio": "^8.27.0"
   },
   "devDependencies": {
+    "@types/node": "*",
     "@wdio/mocha-framework": "^8.26.3",
     "@wdio/spec-reporter": "^8.26.3",
     "pkg": "^5.8.1",

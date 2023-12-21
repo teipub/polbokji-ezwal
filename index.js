@@ -30,8 +30,6 @@ let browser
     await browser.url('https://polbokji.ezwel.com/cuser/checkin/info/checkinInfoPolForm.ez')
     await waitForTitle('checkinInfoPolForm.ez')
     await goToBookablePage()
-    // await browser.url(site.reservation)
-    // await waitForTitle('checkinTrainingCenterBookable.ez')
 
     while(true) {
         await search()
@@ -113,15 +111,23 @@ const reserve = async (script) => {
     await browser.$(`#cal${config.date}`).click()
     const roomElements = await browser.$$('select#roomCd>option')
 
-    for (const idx in roomElements) {
-        const roomElement = roomElements[idx]
-        const roomText = await roomElement.getText()
+    roomElements.map(async(el) => {
+        const roomText = await el.getText()
 
         if (0 < roomText.indexOf(config.roomName)) {
             await roomElement.click()
-            break
+            return
         }
-    }
+    })
+    // for (const idx in roomElements) {
+    //     const roomElement = roomElements[idx]
+    //     const roomText = await roomElement.getText()
+    //
+    //     if (0 < roomText.indexOf(config.roomName)) {
+    //         await roomElement.click()
+    //         break
+    //     }
+    // }
 
     await browser.$('select#dayDiff').waitForEnabled()
     await browser.$$('select#dayDiff>option')[1].click()
@@ -139,6 +145,21 @@ const reserve = async (script) => {
 
     await browser.$$('select#useManCnt>option')[2].click()
     await browser.$$('select#useChildCnt>option')[2].click()
+    await browser.$('#nextBtn').click()
+    await browser.$('#clause').click()
+    await browser.$('#nextBtn').click()
+    await waitForTitle('checkinTrainingCenterStepThree.ez')
+
+    await browser.execute('goStepFour()')
+    await waitForTitle('checkinTrainingCenterStepFour.ez')
+    if(await browser.isAlertOpen()) {
+        await browser.dismissAlert()
+    }
+
+    await browser.execute('goStepReservation()')
+    await waitForTitle('checkinTrainingCenterReservation.ez')
+
+    console.log("reserve success")
 }
 
 
