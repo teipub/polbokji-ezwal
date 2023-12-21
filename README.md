@@ -49,3 +49,7 @@
 
 [nodejs 설치](https://nodejs.org/ko/)
 [크롬 설치](https://www.google.com/intl/ko_kr/chrome/)
+
+# 시작
+
+start.cmd 실행
