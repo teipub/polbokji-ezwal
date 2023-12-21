@@ -1,6 +1,5 @@
 {
   "url": "https://polbokji.ezwel.com/",
-  "reservation": "https://polbokji.ezwel.com/cuser/checkin/reservation/checkinTrainingCenterBookable.ez?condoType=1005&menuCd=10038312",
   "accommodations": [
     {"id": 10045, "name": "대천수련원"},
     {"id": 10046, "name": "변산수련원"},
