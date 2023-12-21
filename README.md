@@ -5,9 +5,7 @@
   "id": "jjuson",
   "password": "ja15909090!",
   "date": "20240116",
-  "preferredAccommodations": [
-    10052
-  ],
+  "preferredAccommodations": [10052, 10049],
   "roomName": "4인",
   "night": 2,
   "waitMilliseconds": 1000
