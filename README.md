@@ -45,5 +45,9 @@
     {"id": 11578, "name": "남해해양경찰수련원"}
   ]
 }
-
 ```
+
+# 설치
+
+[nodejs 설치](https://nodejs.org/ko/)
+[크롬 설치](https://www.google.com/intl/ko_kr/chrome/)
